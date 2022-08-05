@@ -8,6 +8,7 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
+        "airbnb-typescript",
         "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,12 +17,14 @@
             "jsx": true
         },
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": "./tsconfig.json"
     },
-    "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+    "plugins": ["import", "react", "react-hooks", "@typescript-eslint", "prettier"],
     "rules": {
     },
     "settings": {
+        "react": { "version" : "detect"},
         "import/resolver": {
           "typescript": {}
         }
